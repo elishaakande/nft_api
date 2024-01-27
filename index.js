@@ -6,7 +6,7 @@ import userRoutes from "./routes/users.js";
 
 const app = express();
 
-dotenv.config({ path: "./config.env" });
+dotenv.config();
 const port = process.env.PORT || 3000;
 
 app.use("/api/v1/auth", authRoutes);
